@@ -1,0 +1,50 @@
+:root {
+  --bg: #f7f4ef;
+  --fg: #1c1917;
+  --muted: #57534e;
+  --card: #fffdf9;
+  --line: #e7e0d6;
+  --accent: #1d4e4a;
+  --accent-2: #b45309;
+}
+* { box-sizing: border-box; }
+html { font-size: 18px; }
+body {
+  margin: 0;
+  font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.7;
+}
+a { color: var(--accent); }
+header, footer { border-bottom: 1px solid var(--line); }
+footer { border-bottom: 0; border-top: 1px solid var(--line); margin-top: 4rem; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 1.25rem 1.25rem; }
+nav { display: flex; gap: 1rem; flex-wrap: wrap; font-size: 0.9rem; }
+.brand { font-weight: 700; color: var(--fg); text-decoration: none; margin-right: auto; }
+.ad-note {
+  background: #fff7ed;
+  border: 1px solid #fed7aa;
+  color: #9a3412;
+  font-size: 0.85rem;
+  padding: 0.6rem 0.8rem;
+  margin: 1rem 0 1.5rem;
+}
+h1 { font-size: 1.7rem; line-height: 1.35; margin: 0 0 0.75rem; }
+h2 { font-size: 1.2rem; margin-top: 2rem; }
+.lead { font-size: 1.05rem; color: var(--muted); }
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  padding: 1rem 1.1rem;
+  margin: 1rem 0;
+}
+.muted { color: var(--muted); font-size: 0.9rem; }
+.draft-banner {
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 0.4rem 1.25rem;
+}
+table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+th, td { border-bottom: 1px solid var(--line); text-align: left; padding: 0.45rem 0.3rem; vertical-align: top; }
