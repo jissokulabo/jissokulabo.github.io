@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>測り方｜モジラボ</title>
-  <meta name="description" content="同じ音声を複数の文字起こしツールに通し、誤変換と無料制限を記録します。">
+  <meta name="description" content="同じ音声を複数の文字起こしツールに通し、誤変換と無料制限を記録します。未測定のツールに順位はつけません。">
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="assets/style.css">
 </head>
@@ -15,6 +15,7 @@
       <nav>
         <a class="brand" href="index.html">モジラボ</a>
         <a href="method.html">測り方</a>
+        <a href="articles/index.html">記事</a>
         <a href="legal/disclosure.html">広告について</a>
         <a href="legal/privacy.html">プライバシー</a>
         <a href="legal/about.html">運営</a>
@@ -24,22 +25,35 @@
   <main class="wrap">
     <p class="ad-note">当サイトはアフィリエイト（成果報酬型広告）を利用します。</p>
     <h1>同じ音声で測る</h1>
-    <p>比較は、機能一覧の引き写しでは行いません。著作権のない音読原稿を録音し、複数のツールに通します。</p>
+    <p class="meta">手順の公開日 2026-08-21</p>
+    <p class="lead">比較は、機能一覧の引き写しでは行いません。著作権のない音読原稿を録音し、複数のツールに通します。通していないツールに順位はつけません。</p>
+
+    <h2>使う音声</h2>
+    <p>第一回は、オーナーが静かな部屋で読んだ音読Aです。長さは 6分8秒。原稿は測定用に新規作成したもので、実在の会議録音ではありません。人名、所属、電話、研究内容は入れていません。</p>
+    <p>次に予定しているのは、固有名詞なしの二人会話です。実会議の録音と、第三者の顔出し音声と、歌詞は使いません。</p>
+
     <h2>記録するもの</h2>
     <table>
       <thead><tr><th>項目</th><th>内容</th></tr></thead>
       <tbody>
-        <tr><td>正確さ</td><td>原稿と結果の文字の違い</td></tr>
-        <tr><td>崩れやすい語</td><td>同音、数字、カタカナ英語</td></tr>
-        <tr><td>制限</td><td>無料の1回あたり分数、月の上限</td></tr>
-        <tr><td>手間</td><td>アップロードから結果までの時間</td></tr>
+        <tr><td>正確さ</td><td>原稿と結果の文字の違い（CER）。崩れた語の表</td></tr>
+        <tr><td>崩れやすい語</td><td>同音、数字、カタカナ英語、短い応答</td></tr>
+        <tr><td>制限</td><td>無料の1回あたり分数、月の上限。その操作が無料枠に入ったか</td></tr>
+        <tr><td>手間</td><td>アップロード（または処理開始）から結果までの秒数</td></tr>
       </tbody>
     </table>
-    <p>未測定のツールに順位はつけません。体験していない使用感も書きません。</p>
+
+    <h2>対象</h2>
+    <p>初期の候補は、手元の Whisper、Notta フリー、可能なら CLOVA Note フリーです。名前を表に載せるのは、実際に通したあとです。未ログインの紹介リンクは置きません。</p>
+
+    <h2>書いてよいこと / 書かないこと</h2>
+    <p>測定日、音声の種類（音読か会話か）、長さ、失敗した語の例（個人情報なし）、向いている人と向いていない人の仮説、は書いてよいです。</p>
+    <p>未測定の順位付け、体験していない使用感、「公式より正確」などの誇張は書きません。</p>
+    <p>第一回の数字は <a href="articles/first-measurement.html">Whisper small の文字誤り率</a> です。同音の失敗例は <a href="articles/homophones.html">こちら</a> です。</p>
   </main>
   <footer>
     <div class="wrap muted">
-      <p><a href="index.html">トップ</a> · <a href="legal/disclosure.html">広告の開示</a></p>
+      <p><a href="index.html">トップ</a> · <a href="articles/index.html">記事</a> · <a href="legal/disclosure.html">広告の開示</a></p>
     </div>
   </footer>
 </body>

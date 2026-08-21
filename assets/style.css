@@ -40,6 +40,11 @@ h2 { font-size: 1.2rem; margin-top: 2rem; }
   margin: 1rem 0;
 }
 .muted { color: var(--muted); font-size: 0.9rem; }
+.meta { color: var(--muted); font-size: 0.85rem; margin: 0 0 1.25rem; }
+.article-list { list-style: none; padding: 0; margin: 0; }
+.article-list li { border-bottom: 1px solid var(--line); padding: 0.85rem 0; }
+.article-list a { font-weight: 600; text-decoration: none; }
+.article-list p { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.92rem; }
 .draft-banner {
   background: var(--accent);
   color: #fff;
