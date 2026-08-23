@@ -3,35 +3,44 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>同音が片側に潰れた例｜モジラボ</title>
+  <title>対照表が対象票になった｜モジラボ</title>
   <meta name="description" content="音読Aを Whisper small に通したとき、対照表が対象票になり、校正と公正がどちらも構成になった。">
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
   <div class="draft-banner">準備中。検索には出さない設定です。</div>
-  <header>
+  <header class="site-header">
     <div class="wrap">
+      <a class="brand" href="../index.html">モジラボ<small>同じ音声で測る</small></a>
       <nav>
-        <a class="brand" href="../index.html">モジラボ</a>
         <a href="../method.html">測り方</a>
-        <a href="index.html">記事</a>
-        <a href="../legal/disclosure.html">広告について</a>
-        <a href="../legal/privacy.html">プライバシー</a>
+        <a href="index.html">記録</a>
+        <a href="../legal/disclosure.html">広告</a>
         <a href="../legal/about.html">運営</a>
       </nav>
     </div>
   </header>
-  <main class="wrap">
-    <p class="ad-note">当サイトはアフィリエイト（成果報酬型広告）を利用します。このページに成果報酬リンクはありません。</p>
-    <h1>同音が片側に潰れた例</h1>
-    <p class="meta">測定日 2026-08-21 · faster-whisper small · 個人情報は入っていません</p>
-    <p class="lead">会議の文字起こしで困るのは、知らない固有名詞だけではありません。同じ読みの漢字が、片方に寄ることです。第一回の音読では、意図して並べた対が、ほぼ片側に潰れました。</p>
-
-    <h2>この表の読み方</h2>
-    <p>左は原稿の表記。右は Whisper small が出した表記です。他のツールの結果ではありません。音読なので、二人の重なり発話はありません。</p>
-
-    <h2>実際に崩れた語</h2>
+  <main class="wrap prose">
+    <p class="ad-note">アフィリエイトを使います。このページに紹介リンクはありません。</p>
+    <p class="kicker">測定ログ 2026-08-21</p>
+    <h1>対照表が対象票になった</h1>
+    <p class="meta">Whisper small · 音読 · 個人情報なし</p>
+    <p class="lead">同じ読みの漢字が、片方に寄ること。意図して並べた対が、ほぼ片側に潰れました。</p>
+    <div class="flips" style="margin:1.25rem 0;">
+      <div class="flip">
+        <span class="from">原稿：対照表</span>
+        <span class="arrow">↓</span>
+        <span class="to">対象票</span>
+      </div>
+      <div class="flip">
+        <span class="from">原稿：校正 / 公正</span>
+        <span class="arrow">↓</span>
+        <span class="to">どっちも「構成」</span>
+      </div>
+    </div>
+    <h2>一覧</h2>
+    <p>左は原稿。右は Whisper small。他のツールではありません。</p>
     <table>
       <thead><tr><th>原稿</th><th>Whisper small</th></tr></thead>
       <tbody>
@@ -62,18 +71,14 @@
         <tr><td>プレーンテキスト</td><td>プレイエンテキスト</td></tr>
       </tbody>
     </table>
-
-    <h2>実務で何が困るか</h2>
-    <p>「校正」と「公正」は、どちらもこうせいです。原稿では「文章の校正」と「評価の公正さ」を続けて言っています。結果はどちらも「構成」でした。議事録の校正作業と、評価の公平さが、同じ語に落ちると、後から人が直すコストが残ります。</p>
-    <p>「以降」と「遺稿」も同じ読みです。こちらは両方とも「以降」になりました。片方が消えるので、誤りの種類が見えにくいです。CER の数字だけでは、同音の片寄りの強さは分かりません。だから語の表を残します。</p>
-    <p>フィラーの「ええ」「えー」が英字の A になるのも、会議では起きます。短い応答が英字に化けると、話者の同意の回数を数え損ねます。</p>
-
-    <h2>まだ言わないこと</h2>
-    <p>この表は Whisper small・音読1本の失敗例です。有料クラウドが同じ語を直すかどうかは、同じ音声を通すまで書きません。数字のまとめは <a href="first-measurement.html">第一回実測</a>、原稿の意図は <a href="script-design.html">音読原稿に同音を入れた理由</a> です。</p>
+    <h2>何が困る？</h2>
+    <p>「校正」と「公正」は、どちらもこうせい。結果はどちらも「構成」。人が直すコストが残ります。</p>
+    <p>「ええ」が英字の A になると、短い同意の回数を数え損ねます。</p>
+    <p>有料クラウドが同じ語を直すかは、同じ音声を通すまで書きません。<a href="first-measurement.html">22.6%の記録</a> · <a href="script-design.html">原稿の理由</a></p>
   </main>
-  <footer>
-    <div class="wrap muted">
-      <p><a href="index.html">記事一覧</a> · <a href="../legal/disclosure.html">広告の開示</a></p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><a href="index.html">記録</a> · <a href="../legal/disclosure.html">広告</a></p>
     </div>
   </footer>
 </body>

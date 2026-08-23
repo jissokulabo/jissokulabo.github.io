@@ -3,59 +3,63 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>記事一覧｜モジラボ</title>
-  <meta name="description" content="同じ音声で測った文字起こしのメモと、公式制限の整理。">
+  <title>記録｜モジラボ</title>
+  <meta name="description" content="同じ音声で測った文字起こしの記録。">
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
   <div class="draft-banner">準備中。検索には出さない設定です。</div>
-  <header>
+  <header class="site-header">
     <div class="wrap">
+      <a class="brand" href="../index.html">モジラボ<small>同じ音声で測る</small></a>
       <nav>
-        <a class="brand" href="../index.html">モジラボ</a>
         <a href="../method.html">測り方</a>
-        <a href="index.html">記事</a>
-        <a href="../legal/disclosure.html">広告について</a>
-        <a href="../legal/privacy.html">プライバシー</a>
+        <a href="index.html">記録</a>
+        <a href="../legal/disclosure.html">広告</a>
         <a href="../legal/about.html">運営</a>
       </nav>
     </div>
   </header>
   <main class="wrap">
-    <p class="ad-note">当サイトはアフィリエイト（成果報酬型広告）を利用します。</p>
-    <h1>記事</h1>
-    <p class="lead">未測定のツールに順位はつけません。いま公開しているのは、測り方と第一回の実測メモです。</p>
-    <ul class="article-list">
-      <li>
-        <a href="../method.html">同じ音声で測る</a>
-        <p>比較の手順。機能一覧の引き写しはしません。</p>
-      </li>
-      <li>
-        <a href="first-measurement.html">第一回実測：Whisper small の文字誤り率</a>
-        <p>2026-08-21。句読点なしCER 22.6%。NottaとCLOVAは未測定。</p>
-      </li>
-      <li>
-        <a href="homophones.html">同音が片側に潰れた例</a>
-        <p>対照表→対象票、校正と公正がどちらも「構成」。実測で起きた置換だけを書く。</p>
-      </li>
-      <li>
-        <a href="script-design.html">音読原稿に同音を入れた理由</a>
-        <p>測定用に新規作成した原稿です。公開文のコピーではありません。</p>
-      </li>
-      <li>
-        <a href="free-limits.html">6分8秒の音声は、1回3分の無料枠に入らない</a>
-        <p>Notta公式のフリー制限と、こちらの音声長の突き合わせ。Nottaは未測定。</p>
-      </li>
-      <li>
-        <a href="transcript-vs-minutes.html">文字起こしと議事録は別物</a>
-        <p>CERは原文との差。AI要約の上手さは、まだ測っていません。</p>
-      </li>
-    </ul>
+    <p class="ad-note">アフィリエイトを使います。この一覧に紹介リンクはありません。</p>
+    <section class="story-list">
+      <h2>記録</h2>
+      <a class="story" href="../method.html">
+        <span class="badge badge-method">手順</span>
+        <p class="title">同じ録音を、何度も通す</p>
+        <p class="snip">原稿は差し替えない。</p>
+      </a>
+      <a class="story" href="first-measurement.html">
+        <span class="badge badge-log">数字</span>
+        <p class="title">文字の22.6%が違った</p>
+        <p class="snip">2026-08-21。CPU。Notta 未実施。</p>
+      </a>
+      <a class="story" href="homophones.html">
+        <span class="badge badge-log">誤変換</span>
+        <p class="title">対照表が対象票になった</p>
+        <p class="snip">同音の対が片側に潰れた。</p>
+      </a>
+      <a class="story" href="script-design.html">
+        <span class="badge badge-note">原稿</span>
+        <p class="title">なぜ、壊れる語を先に入れたか</p>
+        <p class="snip">測定用に新規作成した原稿。</p>
+      </a>
+      <a class="story" href="free-limits.html">
+        <span class="badge badge-limit">制限</span>
+        <p class="title">6分8秒と、1回3分</p>
+        <p class="snip">公式の分数との突き合わせ。Notta 未測定。</p>
+      </a>
+      <a class="story" href="transcript-vs-minutes.html">
+        <span class="badge badge-note">用語</span>
+        <p class="title">文字起こしと、議事録</p>
+        <p class="snip">測っているのは前者。</p>
+      </a>
+    </section>
   </main>
-  <footer>
-    <div class="wrap muted">
-      <p><a href="../index.html">トップ</a> · <a href="../legal/disclosure.html">広告の開示</a></p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><a href="../index.html">トップ</a> · <a href="../legal/disclosure.html">広告</a></p>
     </div>
   </footer>
 </body>

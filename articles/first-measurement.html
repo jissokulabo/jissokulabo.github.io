@@ -3,70 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>第一回実測：Whisper small の文字誤り率｜モジラボ</title>
-  <meta name="description" content="2026-08-21、自作音読6分8秒を faster-whisper small に通した結果。句読点なしCER 22.6%。">
+  <title>文字の22.6%が違った｜モジラボ</title>
+  <meta name="description" content="2026-08-21、自作音読6分8秒を faster-whisper small に通した。句読点なしCER 22.6%。">
   <meta name="robots" content="noindex,nofollow">
   <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
   <div class="draft-banner">準備中。検索には出さない設定です。</div>
-  <header>
+  <header class="site-header">
     <div class="wrap">
+      <a class="brand" href="../index.html">モジラボ<small>同じ音声で測る</small></a>
       <nav>
-        <a class="brand" href="../index.html">モジラボ</a>
         <a href="../method.html">測り方</a>
-        <a href="index.html">記事</a>
-        <a href="../legal/disclosure.html">広告について</a>
-        <a href="../legal/privacy.html">プライバシー</a>
+        <a href="index.html">記録</a>
+        <a href="../legal/disclosure.html">広告</a>
         <a href="../legal/about.html">運営</a>
       </nav>
     </div>
   </header>
-  <main class="wrap">
-    <p class="ad-note">当サイトはアフィリエイト（成果報酬型広告）を利用します。このページに成果報酬リンクはありません。</p>
-    <h1>第一回実測：Whisper small の文字誤り率</h1>
-    <p class="meta">測定日 2026-08-21 · 公開メモ 2026-08-21 · このページは1条件・1モデルの記録です</p>
-    <p class="lead">結論から書きます。自作の音読原稿を録音し、手元の PC で faster-whisper の small モデルに通したところ、句読点を除いた文字誤り率（CER）は 22.6% でした。Notta と CLOVA Note は、この日は動かしていません。</p>
-
-    <h2>測ったもの</h2>
+  <main class="wrap prose">
+    <p class="ad-note">アフィリエイトを使います。このページに紹介リンクはありません。</p>
+    <p class="kicker">測定ログ 2026-08-21</p>
+    <h1>文字の22.6%が違った</h1>
+    <p class="meta">音読A · 6分8秒 · Whisper small · CPU · 115.7秒</p>
+    <div class="callout dark">
+      句読点を除くと、<span class="hi">22.6%</span> の文字が原稿と違った。<br>
+      Notta と CLOVA は、この日は動かしていない。
+    </div>
+    <h2>条件</h2>
     <table>
       <thead><tr><th>項目</th><th>内容</th></tr></thead>
       <tbody>
-        <tr><td>音声</td><td>オーナーが静かな部屋で読んだ音読A。長さ 367.9秒（6分8秒）</td></tr>
-        <tr><td>形式</td><td>m4a を 16 kHz・モノラルの WAV に変換して投入</td></tr>
-        <tr><td>原稿</td><td>測定用に新規作成。公開ドメインの文章ではない</td></tr>
-        <tr><td>ツール</td><td>faster-whisper small。CPU。所要 115.7秒</td></tr>
-        <tr><td>未実施</td><td>Notta、CLOVA Note、会話音声、他サイズの Whisper</td></tr>
+        <tr><td>音声</td><td>静かな部屋の音読。実会議ではない</td></tr>
+        <tr><td>形式</td><td>m4a → 16 kHz・モノラル WAV</td></tr>
+        <tr><td>原稿</td><td>測定用に新規作成</td></tr>
+        <tr><td>未実施</td><td>Notta、CLOVA、会話音声</td></tr>
       </tbody>
     </table>
-
     <h2>数字</h2>
     <table>
       <thead><tr><th>指標</th><th>値</th></tr></thead>
       <tbody>
         <tr><td>句読点あり CER</td><td>24.5%</td></tr>
         <tr><td>句読点なし CER</td><td>22.6%</td></tr>
-        <tr><td>仮説文字数 / 原稿文字数（句読点なし）</td><td>1357 / 1272</td></tr>
+        <tr><td>出力 / 原稿（句読点なし）</td><td>1357 / 1272</td></tr>
       </tbody>
     </table>
-    <p>CER は、原稿に対して何割の文字が違うかです。0% が完全一致。計算は置換・脱落・挿入を文字単位で数えています。句読点ありの方が悪いのは、読点の位置が原稿とずれるためです。実務では句読点なしの 22.6% の方が、「単語がどれだけ違うか」に近いです。</p>
-    <p>仮説側が原稿より文字数が多いのは、挿入が多いということです。短く言い直した箇所や、フィラーの読み取りが、余分な文字として残っています。</p>
-
-    <h2>この数字で言わないこと</h2>
-    <ul>
-      <li>「Whisper は使えない」とは言いません。モデルは small で、録音は音読1本です。</li>
-      <li>クラウドの有料サービスより劣る／優る、とは言いません。同じ音声をまだ通していません。</li>
-      <li>公式が出している認識率（例: 会議で98%超）と、この CER を直接比べません。測り方が違います。</li>
-    </ul>
-    <p>比較表に並べるのは、同じ音声を通したツールだけです。手順は <a href="../method.html">測り方</a> にあります。</p>
-
-    <h2>次に測るもの</h2>
-    <p>同じ音読Aを、無料枠のクラウドサービスへ通します。いま分かっている制約は、Notta 公式フリーが「1回につき3分まで」であることです。6分8秒のファイルは、分割しないとフリーに入りません。分割して測るか、有料枠で測るかは、別途決めます。</p>
-    <p>崩れた語の一覧は <a href="homophones.html">同音が片側に潰れた例</a> です。原稿の意図は <a href="script-design.html">音読原稿に同音を入れた理由</a> です。</p>
+    <p>CER は、原稿に対して何割の文字が違うか。0% が一致。実務で「単語がどれだけ違うか」に近いのは、句読点なしの22.6%。</p>
+    <h2>言わないこと</h2>
+    <p>「Whisper は使えない」とは書きません。モデルは small で、録音は音読1本。クラウドより劣る／優るとも書きません。同じ音声をまだ通していないからです。</p>
+    <p>崩れた語 → <a href="homophones.html">対照表が対象票になった</a><br>手順 → <a href="../method.html">測り方</a></p>
   </main>
-  <footer>
-    <div class="wrap muted">
-      <p><a href="index.html">記事一覧</a> · <a href="../legal/disclosure.html">広告の開示</a></p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><a href="index.html">記録</a> · <a href="../legal/disclosure.html">広告</a></p>
     </div>
   </footer>
 </body>
