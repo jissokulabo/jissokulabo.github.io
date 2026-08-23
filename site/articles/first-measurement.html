@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>文字の22.6%が違った｜モジラボ</title>
+  <meta name="description" content="2026-08-21、自作音読6分8秒を faster-whisper small に通した。句読点なしCER 22.6%。">
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="draft-banner">準備中。検索には出さない設定です。</div>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="../index.html">モジラボ<small>同じ音声で測る</small></a>
+      <nav>
+        <a href="../method.html">測り方</a>
+        <a href="index.html">記録</a>
+        <a href="../legal/disclosure.html">広告</a>
+        <a href="../legal/about.html">運営</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap prose">
+    <p class="ad-note">アフィリエイトを使います。このページに紹介リンクはありません。</p>
+    <p class="kicker">測定ログ 2026-08-21</p>
+    <h1>文字の22.6%が違った</h1>
+    <p class="meta">音読A · 6分8秒 · Whisper small · CPU · 115.7秒</p>
+    <div class="callout dark">
+      句読点を除くと、<span class="hi">22.6%</span> の文字が原稿と違った。<br>
+      Notta と CLOVA は、この日は動かしていない。
+    </div>
+    <h2>条件</h2>
+    <table>
+      <thead><tr><th>項目</th><th>内容</th></tr></thead>
+      <tbody>
+        <tr><td>音声</td><td>静かな部屋の音読。実会議ではない</td></tr>
+        <tr><td>形式</td><td>m4a → 16 kHz・モノラル WAV</td></tr>
+        <tr><td>原稿</td><td>測定用に新規作成</td></tr>
+        <tr><td>未実施</td><td>Notta、CLOVA、会話音声</td></tr>
+      </tbody>
+    </table>
+    <h2>数字</h2>
+    <table>
+      <thead><tr><th>指標</th><th>値</th></tr></thead>
+      <tbody>
+        <tr><td>句読点あり CER</td><td>24.5%</td></tr>
+        <tr><td>句読点なし CER</td><td>22.6%</td></tr>
+        <tr><td>出力 / 原稿（句読点なし）</td><td>1357 / 1272</td></tr>
+      </tbody>
+    </table>
+    <p>CER は、原稿に対して何割の文字が違うか。0% が一致。実務で「単語がどれだけ違うか」に近いのは、句読点なしの22.6%。</p>
+    <h2>言わないこと</h2>
+    <p>「Whisper は使えない」とは書きません。モデルは small で、録音は音読1本。クラウドより劣る／優るとも書きません。同じ音声をまだ通していないからです。</p>
+    <p>崩れた語 → <a href="homophones.html">対照表が対象票になった</a><br>手順 → <a href="../method.html">測り方</a></p>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><a href="index.html">記録</a> · <a href="../legal/disclosure.html">広告</a></p>
+    </div>
+  </footer>
+</body>
+</html>
