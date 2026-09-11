@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>準備中｜緒方 穂波</title>
+<meta name="robots" content="noindex">
+<style>
+  :root{
+    color-scheme:light;
+    --bg:#ffffff;--sky:#eef6fc;--line:#d9e7f1;
+    --blue:#1f6fb2;--blue-dark:#155a92;--sky-accent:#4aa3d6;
+    --ink:#232b32;--muted:#6a757e;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;min-height:100vh;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    background:var(--sky);color:var(--muted);
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP","Yu Gothic UI",Meiryo,sans-serif;
+    line-height:1.85;text-align:center;padding:40px 24px;
+  }
+  .en{font-size:.75rem;font-weight:700;letter-spacing:.18em;color:var(--sky-accent);margin:0 0 8px;}
+  h1{font-weight:700;color:var(--ink);font-size:1.25rem;margin:0 0 12px;}
+  p{font-size:.95rem;max-width:22em;margin:0 auto 26px;}
+  .home{
+    display:inline-block;border:none;cursor:pointer;
+    font-weight:700;letter-spacing:.06em;font-size:.9rem;
+    color:#fff;background:var(--blue);padding:12px 28px;border-radius:999px;
+  }
+  .home:active{background:var(--blue-dark);}
+  #fallback{font-size:.82rem;margin-top:14px;}
+</style>
+</head>
+<body>
+  <p class="en">UNDER CONSTRUCTION</p>
+  <h1>このページは準備中です</h1>
+  <p>お探しの情報はただいま準備しています。<br>このタブを閉じてお戻りください。</p>
+  <button class="home" type="button" onclick="window.close()">▸ このタブを閉じる</button>
+  <p id="fallback" hidden>閉じられない場合は、ブラウザのタブを手動で閉じてください。</p>
+  <script>
+    document.querySelector('button.home').addEventListener('click', function(){
+      setTimeout(function(){ document.getElementById('fallback').hidden = false; }, 300);
+    });
+  </script>
+</body>
+</html>
